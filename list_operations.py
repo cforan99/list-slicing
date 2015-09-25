@@ -106,18 +106,18 @@ def first_three(input_list):
     return first_three_items
 
 
-# def last_five(input_list):
-#     """
-#     Return the last five elements of the input list.
+def last_five(input_list):
+    """
+    Return the last five elements of the input list.
 
-#     For example:
+    For example:
 
-#     >>> last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [15, 18, 21, 24, 27]
+    >>> last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [15, 18, 21, 24, 27]
 
-#     """
-
-#     return []
+    """
+    last_five_items = input_list[-5:]
+    return last_five_items
 
 
 # def middle(input_list):
