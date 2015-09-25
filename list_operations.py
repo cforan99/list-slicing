@@ -90,18 +90,20 @@ def init(input_list):
 # # You can also get reviewed by a neighbor who has been reviewed.
 
 
-# def first_three(input_list):
-#     """
-#     Return the first three elements of the input list.
+def first_three(input_list):
+    """
+    Return the first three elements of the input list.
 
-#     For example:
+    For example:
 
-#     >>> first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
-#     ['Jan', 'Feb', 'Mar']
+    >>> first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
+    ['Jan', 'Feb', 'Mar']
 
-#     """
+    """
 
-#     return []
+    first_three_items = input_list[:3]
+
+    return first_three_items
 
 
 # def last_five(input_list):
