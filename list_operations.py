@@ -207,55 +207,62 @@ def replace_third_and_last(input_list):
     return
 
 
-# def replace_middle(input_list):
-#     """
-#     Replace all elements of the input list with the the values 42 and 37, in
-#     that order, except for the first two and last two elements. Return nothing.
+def replace_middle(input_list):
+    """
+    Replace all elements of the input list with the the values 42 and 37, in
+    that order, except for the first two and last two elements. Return nothing.
 
-#     For example:
+    For example:
 
-#     >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-#     >>> replace_middle(multiples)
-#     >>> multiples == [0, 3, 42, 37, 24, 27]
-#     True
+    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    >>> replace_middle(multiples)
+    >>> multiples == [0, 3, 42, 37, 24, 27]
+    True
 
-#     """
+    """
 
-#     pass
+    input_list[2:-2] = [42, 37]
 
-
-# def delete_third_and_seventh(input_list):
-#     """
-#     Remove the third and seventh elements of the input list and return
-#     nothing.
-
-#     For example:
-
-#     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     >>> delete_third_and_seventh(notes)
-#     >>> notes == ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
-#     True
-
-#     """
-
-#     pass
+    return
 
 
-# def delete_middle(input_list):
-#     """
-#     Remove all elements from the input list except for the first two and the
-#     last two. Return nothing.
+def delete_third_and_seventh(input_list):
+    """
+    Remove the third and seventh elements of the input list and return
+    nothing.
 
-#     For example:
+    For example:
 
-#     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     >>> delete_middle(notes)
-#     >>> notes == ['Do', 'Re', 'Ti', 'Do']
-#     True
+    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    >>> delete_third_and_seventh(notes)
+    >>> notes == ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
+    True
 
-#     """
+    """
 
-#     pass
+    input_list[6:7] = []
+    input_list[2:3] = []
+
+    return
+
+
+def delete_middle(input_list):
+    """
+    Remove all elements from the input list except for the first two and the
+    last two. Return nothing.
+
+    For example:
+
+    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    >>> delete_middle(notes)
+    >>> notes == ['Do', 'Re', 'Ti', 'Do']
+    True
+
+    """
+
+    input_list[2:-2] = []
+    
+    return
 
 
 # ##############################################################################
