@@ -32,9 +32,9 @@ def head(input_list):
 
     """
 
-    head_items = input_list[0]
+    head_item = input_list[0]
 
-    return head_items
+    return head_item
 
 
 def tail(input_list):
@@ -151,19 +151,21 @@ def inner_four(input_list):
     return inner_four_items
 
 
-# def inner_four_end(input_list):
-#     """
-#     Return the sixth, fifth, fourth, and third elements from the end of the
-#     list, in that order.
+def inner_four_end(input_list):
+    """
+    Return the sixth, fifth, fourth, and third elements from the end of the
+    list, in that order.
 
-#     For example:
+    For example:
 
-#     >>> inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [12, 15, 18, 21]
+    >>> inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [12, 15, 18, 21]
 
-#     """
+    """
 
-#     return []
+    inner_four_end_items = input_list[-6:-2]
+
+    return inner_four_end_items
 
 
 # def replace_head(input_list):
