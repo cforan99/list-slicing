@@ -69,18 +69,20 @@ def last(input_list):
     return last_item
 
 
-# def init(input_list):
-#     """
-#     Return all elements of the input list except the last.
+def init(input_list):
+    """
+    Return all elements of the input list except the last.
 
-#     For example:
+    For example:
 
-#     >>> init(['Jan', 'Feb', 'Mar'])
-#     ['Jan', 'Feb']
+    >>> init(['Jan', 'Feb', 'Mar'])
+    ['Jan', 'Feb']
 
-#     """
+    """
 
-#     return []
+    init_items = input_list[:-1]
+
+    return init_items
 
 
 # ##############################################################################
