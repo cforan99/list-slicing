@@ -136,18 +136,19 @@ def middle(input_list):
     return middle_items
 
 
-# def inner_four(input_list):
-#     """
-#     Return the third, fourth, fifth, and sixth elements of the input list.
+def inner_four(input_list):
+    """
+    Return the third, fourth, fifth, and sixth elements of the input list.
 
-#     For example:
+    For example:
 
-#     >>> inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [6, 9, 12, 15]
+    >>> inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [6, 9, 12, 15]
 
-#     """
+    """
 
-#     return []
+    inner_four_items = input_list[2:6]
+    return inner_four_items
 
 
 # def inner_four_end(input_list):
