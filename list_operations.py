@@ -23,7 +23,7 @@ FURTHER_STUDY = False
 
 def head(input_list):
     """
-    Return the first element of the input list.
+    Return the first element of the input lis
 
     For example:
 
@@ -32,23 +32,25 @@ def head(input_list):
 
     """
 
-    first = input_list[0]
+    head_items = input_list[0]
 
-    return first
+    return head_items
 
 
-# def tail(input_list):
-#     """
-#     Return all elements of the input list except the first.
+def tail(input_list):
+    """
+    Return all elements of the input list except the first.
 
-#     For example:
+    For example:
 
-#     >>> tail(['Jan', 'Feb', 'Mar'])
-#     ['Feb', 'Mar']
+    >>> tail(['Jan', 'Feb', 'Mar'])
+    ['Feb', 'Mar']
 
-#     """
+    """
 
-#     return []
+    tail_items = input_list[1:]
+    
+    return tail_items
 
 
 # def last(input_list):
