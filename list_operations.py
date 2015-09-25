@@ -49,22 +49,24 @@ def tail(input_list):
     """
 
     tail_items = input_list[1:]
-    
+
     return tail_items
 
 
-# def last(input_list):
-#     """
-#     Return the last element of the input list.
+def last(input_list):
+    """
+    Return the last element of the input list.
 
-#     For example:
+    For example:
 
-#     >>> last(['Jan', 'Feb', 'Mar'])
-#     'Mar'
+    >>> last(['Jan', 'Feb', 'Mar'])
+    'Mar'
 
-#     """
+    """
 
-#     return []
+    last_item = input_list[-1]
+
+    return last_item
 
 
 # def init(input_list):
