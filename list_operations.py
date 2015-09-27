@@ -436,36 +436,47 @@ def custom_index(input_list, value):
     return index
 
 
-# def custom_count(input_list, value):
-#     """
-#     like input_list.count(value), should return the number of times the specified
-#     value appears in the list.
+def custom_count(input_list, value):
+    """
+    like input_list.count(value), should return the number of times the specified
+    value appears in the list.
 
-#     For example:
+    For example:
 
-#     >>> custom_count(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Do')
-#     2
+    >>> custom_count(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Do')
+    2
 
-#     """
+    """
 
-#     return 0
+    count = 0
+    
+    for item in input_list:
+        if item == value:
+            count += 1
+    
+    return count
 
 
-# def custom_reverse(input_list):
-#     """
-#     like input_list.reverse(), should reverse the elements of the original list
-#     and return nothing (we call this reversing "in place")
+def custom_reverse(input_list):
+    """
+    like input_list.reverse(), should reverse the elements of the original list
+    and return nothing (we call this reversing "in place")
 
-#     For example:
+    For example:
 
-#     >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-#     >>> custom_reverse(multiples)
-#     >>> multiples == [27, 24, 21, 18, 15, 12, 9, 6, 3, 0]
-#     True
+    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    >>> custom_reverse(multiples)
+    >>> multiples == [27, 24, 21, 18, 15, 12, 9, 6, 3, 0]
+    True
 
-#     """
+    """
 
-#     pass
+    reversed_list = []
+
+    for i in range((len(input_list)-1), 0, -1):
+        reversed_list = reversed_list + input_list[i] 
+
+    return
 
 
 # def custom_contains(input_list, value):
