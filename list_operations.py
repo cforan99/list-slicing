@@ -471,49 +471,84 @@ def custom_reverse(input_list):
 
     """
 
-    reversed_list = []
+    
 
-    for i in range((len(input_list)-1), 0, -1):
-        reversed_list = reversed_list + input_list[i] 
+    # The code below mimics the reversed() function and does NOT reverse in place.
+    # reversed_list = []
 
-    return
+    # for i in range((len(input_list)-1), 0, -1):
+    #     short_list = [input_list[i]]
+    #     reversed_list = reversed_list + short_list
+    #     print reversed_list
 
-
-# def custom_contains(input_list, value):
-#     """
-#     like (value in input_list), should return True if the list contains the
-#     specified value and False if it does not. Remember, do not use the `if X in Y`
-#     statement -- find another way to solve it!
-
-#     For example:
-
-#     >>> custom_contains([0, 3, 6, 9, 12, 15, 18, 21, 24], 23)
-#     False
-
-#     >>> custom_contains([0, 3, 6, 9, 12, 15, 18, 21, 24], 24)
-#     True
-
-#     """
-
-#     return None
+    # short_list = [input_list[0]]
+    # reversed_list = reversed_list + short_list
+    
+    # return reversed_list
 
 
-# def custom_equality(some_list, another_list):
-#     """
-#     like (some_list == another_list), should return True if both lists contain
-#     the same values in the same indexes
+def custom_contains(input_list, value):
+    """
+    like (value in input_list), should return True if the list contains the
+    specified value and False if it does not. Remember, do not use the `if X in Y`
+    statement -- find another way to solve it!
 
-#     For example:
+    For example:
 
-#     >>> custom_equality(['Jan', 'Feb', 'Mar'], ['Jan', 'Feb', 'Mar'])
-#     True
+    >>> custom_contains([0, 3, 6, 9, 12, 15, 18, 21, 24], 23)
+    False
 
-#     >>> custom_equality(['Jan', 'Feb', 'Mar'], ['Jan', 'Mar', 'Feb'])
-#     False
+    >>> custom_contains([0, 3, 6, 9, 12, 15, 18, 21, 24], 24)
+    True
 
-#     """
+    """
 
-#     return None
+    for item in input_list:
+        if item == value:
+            return True
+        else: 
+            pass
+
+    return False
+
+
+def custom_equality(some_list, another_list):
+    """
+    like (some_list == another_list), should return True if both lists contain
+    the same values in the same indexes
+
+    For example:
+
+    >>> custom_equality(['Jan', 'Feb', 'Mar'], ['Jan', 'Feb', 'Mar'])
+    True
+
+    >>> custom_equality(['Jan', 'Feb', 'Mar'], ['Jan', 'Mar', 'Feb'])
+    False
+
+    """
+
+    index_count = 0
+    
+    some_count = 0
+    
+    for item in some_list:
+        some_count += 1
+
+    another_count = 0
+
+    for item in another_list:
+        another_count += 1
+
+    if some_count != another_count:
+        return False
+    else:
+        for item in some_list:
+            if item != another_list[index_count]:
+                return False
+            else: 
+                index_count += 1
+
+    return True
 
 
 # ##############################################################################
