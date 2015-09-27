@@ -327,11 +327,13 @@ def custom_append(input_list, value):
 
     """
 
+    # How do you rebind the new input_list to the value that the user specified?
+
     added_value = [value]
 
     input_list = input_list + added_value
 
-    return
+    return input_list
 
 
 def custom_extend(input_list, second_list):
@@ -350,7 +352,7 @@ def custom_extend(input_list, second_list):
 
     input_list = input_list + second_list
 
-    return
+    return input_list
 
 
 def custom_insert(input_list, index, value):
@@ -367,15 +369,15 @@ def custom_insert(input_list, index, value):
 
     """
 
-    added_value = value
+    added_value = [value]
 
     head_list = input_list[:index]
 
     tail_list = input_list[index:]
 
-    input_list = head_item + added_value + tail_list
+    input_list = head_list + added_value + tail_list
 
-    return
+    return input_list
 
 
 def custom_remove(input_list, value):
@@ -394,8 +396,7 @@ def custom_remove(input_list, value):
 
     input_list = input_list[1:]
 
-    return
-
+    return input_list
 
 def custom_pop(input_list):
     """
@@ -471,20 +472,17 @@ def custom_reverse(input_list):
 
     """
 
-    
-
     # The code below mimics the reversed() function and does NOT reverse in place.
-    # reversed_list = []
+    reversed_list = []
 
-    # for i in range((len(input_list)-1), 0, -1):
-    #     short_list = [input_list[i]]
-    #     reversed_list = reversed_list + short_list
-    #     print reversed_list
+    for i in range((len(input_list)-1), 0, -1):
+        short_list = [input_list[i]]
+        reversed_list = reversed_list + short_list
 
-    # short_list = [input_list[0]]
-    # reversed_list = reversed_list + short_list
+    short_list = [input_list[0]]
+    reversed_list = reversed_list + short_list
     
-    # return reversed_list
+    return reversed_list
 
 
 def custom_contains(input_list, value):
