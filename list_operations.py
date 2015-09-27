@@ -416,19 +416,24 @@ def custom_pop(input_list):
     return last_item
 
 
-# def custom_index(input_list, value):
-#     """
-#     like input_list.index(value), should return the index of the first item
-#     which matches the specified value
+def custom_index(input_list, value):
+    """
+    like input_list.index(value), should return the index of the first item
+    which matches the specified value
 
-#     For example:
+    For example:
 
-#     >>> custom_index(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Do')
-#     0
+    >>> custom_index(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Do')
+    0
 
-#     """
+    """
 
-#     return 0
+    for item in enumerate(input_list):
+        if item[1] == value:
+            index = item[0]
+            break
+
+    return index
 
 
 # def custom_count(input_list, value):
