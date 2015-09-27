@@ -378,36 +378,42 @@ def custom_insert(input_list, index, value):
     return
 
 
-# def custom_remove(input_list, value):
-#     """
-#     like input_list.remove(value), should remove the first item of the
-#     value specified and return nothing
+def custom_remove(input_list, value):
+    """
+    like input_list.remove(value), should remove the first item of the
+    value specified and return nothing
 
-#     For example:
+    For example:
 
-#     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     >>> custom_remove(notes, 'Do')
-#     >>> notes == ['Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     True
+    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    >>> custom_remove(notes, 'Do')
+    >>> notes == ['Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    True
 
-#     """
+    """
 
-#     pass
+    input_list = input_list[1:]
+
+    return
 
 
-# def custom_pop(input_list):
-#     """
-#     like input_list.pop(), should remove the last item in the list and
-#     return it
+def custom_pop(input_list):
+    """
+    like input_list.pop(), should remove the last item in the list and
+    return it
 
-#     For example:
+    For example:
 
-#     >>> custom_pop(['Jan', 'Feb', 'March'])
-#     'March'
+    >>> custom_pop(['Jan', 'Feb', 'March'])
+    'March'
 
-#     """
+    """
 
-#     return None
+    last_item = input_list[-1]
+
+    input_list = input_list[:-1]
+
+    return last_item
 
 
 # def custom_index(input_list, value):
