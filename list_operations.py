@@ -367,7 +367,15 @@ def custom_insert(input_list, index, value):
 
     """
 
-    pass
+    added_value = value
+
+    head_list = input_list[:index]
+
+    tail_list = input_list[index:]
+
+    input_list = head_item + added_value + tail_list
+
+    return
 
 
 # def custom_remove(input_list, value):
